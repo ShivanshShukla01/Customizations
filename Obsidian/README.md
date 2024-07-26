@@ -4,4 +4,6 @@
 - Unzip the file
 - Paste the `.obsidian` folder in the Vault's folder of Obsidian
 
+The Zip folder contains the Extensions and Setting Tweaks I prefer. This can be but not meant, for Other.
+
 ![](https://i.imgur.com/O5iznru.png)
