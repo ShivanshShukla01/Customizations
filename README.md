@@ -5,16 +5,6 @@ This repository contains configurations and scripts for setting up a consistent 
 ![GitHub repo size](https://img.shields.io/github/repo-size/ShivanshShukla01/Customizations) 📏
 ![GitHub last commit](https://img.shields.io/github/last-commit/ShivanshShukla01/Customizations) 🕒
 
-## Table of Contents 📚
-
-- [Introduction](#introduction) 🚀
-- [Folder Descriptions](#folder-descriptions) 📁
-  - [Apps List](#apps-list) 🛠️
-  - [AutoHotKey](#autohotkey) 🔑
-  - [MPV](#mpv) 🎬
-  - [Obsidian](#obsidian) 📖
-  - [VS Code Theme](#vs-code-theme) 🎨
-
 ## Introduction 🎊
 
 This repository is designed to save time ⏳ when setting up a new machine 🖥️ by providing all the necessary configurations and scripts in one place 🗂️.
