@@ -11,22 +11,22 @@ This repository is designed to save time ⏳ when setting up a new machine 🖥�
 
 ## Folder Descriptions 📂
 
-### 📦 Apps List 🛠️
+### 📦 [Apps List](https://github.com/ShivanshShukla01/Customizations/tree/main/Apps%20List) 🛠️
 
 Contains a list of applications that are essential for my workflow 🚀.
 
-### ⚡ AutoHotKey 🔑
+### ⚡ [AutoHotKey](https://github.com/ShivanshShukla01/Customizations/tree/main/AutoHotKey) 🔑
 
 Includes scripts for AutoHotKey to set up keyboard shortcuts ⌨️ and other automation 🤖.
 
-### 🎥 MPV 🎬
+### 🎥 [MPV](https://github.com/ShivanshShukla01/Customizations/tree/main/MPV) 🎬
 
 Contains configuration files for MPV media player 🎶.
 
-### 📝 Obsidian 📖
+### 📝 [Obsidian](https://github.com/ShivanshShukla01/Customizations/tree/main/Obsidian) 📖
 
 Includes settings and extensions for Obsidian, as well as a guide on how to copy the `.obsidian` folder to a new machine 📤.
 
-### 🎨 VS Code Theme 🎉
+### 🎨 [VS Code Theme](https://github.com/ShivanshShukla01/Customizations/tree/main/VS%20Code%20Theme) 🎉
 
-Contains JSON files for the VS Code theme 🎨 and settings used.
+Contains JSON files for the VS Code theme 🎨.
