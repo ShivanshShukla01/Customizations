@@ -24,9 +24,11 @@ These are some of the apps that I consider downloading on a **New Machine** in c
 - 📹 OBS Studio
 - 🗒️ Obsidian
 - 📝 OnlyOffice - Free alternative to MS Office with similar UI
+- ✏️ Openboard - To annotate over any window or any screen
 - 📄 PDFgear
 - 🛠️ PowerToys
 - 🌧️ Rainmeter
+- 🖥️ Spacedesk - To use mobile phone as a dual screen
 - 📑 SumatraPDF
 - 🌳 Treesize
 - 💻 VMware Workstation
