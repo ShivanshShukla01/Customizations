@@ -97,9 +97,9 @@ Meter=String
 MeasureName=MeasureTime
 FontColor=255,255,0,255
 ;FontFace=Harlow Solid
-FontSize=30
-W=225
-H=45
+FontSize=26
+W=400
+H=40
 AntiAlias=1
 SolidColor=0,0,0,255  ; 255 opacity black background
 
