@@ -3,6 +3,8 @@
 - Locate it from the Rainmeter App from Windows System Tray
 - And Load the File
 
+## Battery Percentage
+
 ```ini
 [Rainmeter]
 Author=mailmerge (analities.com) edited by riliaf@seznam.cz
@@ -46,16 +48,59 @@ MeasureName=MeasurePercent
 Text=%1%
 AntiAlias=1
 FontColor=255,255,0,255
-FontFace=Harlow Solid
-;StringStyle=bold
-StringAlign=CENTER
-FontSize=30
+;FontFace=Harlow Solid
+StringStyle=bold
+;StringAlign=CENTER
+FontSize=28
 X=160r
 Y=0r
-W=70
+;W=45
 H=40
 SolidColor=0,0,0,150
 
 ;=======================================================================METERS==
+
+```
+
+## Clock
+
+```ini
+[Rainmeter]
+Update=1000
+BackgroundMode=0
+AccurateText=1
+
+[Variables]
+Font=Times New Roman
+Opacity=150
+FontColor=255,255,0,255  ; Yellow color
+BackgroundColor=0,0,0,150  ; 150 opacity black
+
+[MeasureTime]
+Measure=Time
+Format=%d-%b-%y ~ %I:%M:%S %p
+
+;%d-%b-%y for date like 21-Sep-24
+;%d-%m-%y for date like 21-10-24
+;%I:%M:%S %p for 12 hour format
+;%H:%M:%S for 24 hour format
+;%p is for AM or PM
+
+
+;================== Background Meter =====================
+[MeterBackground]
+Meter=Shape
+
+;================== Time Display Meter =====================
+[MeterTime]
+Meter=String
+MeasureName=MeasureTime
+FontColor=255,255,0,255
+;FontFace=Harlow Solid
+FontSize=30
+W=225
+H=45
+AntiAlias=1
+SolidColor=0,0,0,255  ; 255 opacity black background
 
 ```
