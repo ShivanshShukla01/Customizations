@@ -29,6 +29,7 @@ These are some of the apps that I consider downloading on a **New Machine** in c
 - 🛠️ PowerToys
 - 🌧️ Rainmeter
 - 🖥️ Spacedesk - To use mobile phone as a dual screen
+- 🖱️ Smooth Scrolling
 - 📑 SumatraPDF
 - 🌳 Treesize
 - 💻 VMware Workstation
