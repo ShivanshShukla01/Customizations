@@ -30,6 +30,7 @@ These are some of the apps that I consider downloading on a **New Machine** in c
 - 🌧️ Rainmeter
 - 🖥️ Spacedesk - To use mobile phone as a dual screen
 - 🖱️ Smooth Scrolling
+- 😊 Stretchly
 - 📑 SumatraPDF
 - 🌳 Treesize
 - 💻 VMware Workstation
