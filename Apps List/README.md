@@ -36,12 +36,14 @@ These are some of the apps that I consider downloading on a **New Machine** in c
 - 💻 VMware Workstation
 - 📦 Winrar
 - 🧹 Wise Program Uninstaller
+- 🧼 Revo Uninstaller 
 - 🖥️ Alacritty - If you do not want to use the native terminal
 - 🔊 EarTrumpet
 - 🖋️ Concepts
 - 💬 Telegram Desktop
 - 💬 WhatsApp
 - 🔧 WinToys
+- 🦅 Windhawk
 - 🟦 Glassbrick
 - 🛡️ DefenderUI
 
