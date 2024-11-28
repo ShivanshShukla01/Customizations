@@ -6,4 +6,4 @@
 
 The Zip folder contains the Extensions and Setting Tweaks I prefer. This can be but not meant, for Others.
 
-![](https://i.imgur.com/O5iznru.png)
+![](https://i.imgur.com/3scNbNa.png)
