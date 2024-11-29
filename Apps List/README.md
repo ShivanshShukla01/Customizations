@@ -94,3 +94,4 @@ These are some of the apps that I consider downloading on a **New Machine** in c
 - 📚 tldr - To learn about CLI
 - 🤦 thefuck - Autocorrect commands written in the wrong way
 - 📂 zoxide - Better than `cd`
+- 🌈 oh-my-posh - Make the terminal beautiful in windows/linux
