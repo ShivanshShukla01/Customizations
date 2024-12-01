@@ -10,6 +10,7 @@ These are some of the apps that I consider downloading on a **New Machine** in c
 - 📱 Bluestacks
 - 🦁 Brave
 - 💡 Desklamp
+- 📱 Discord
 - 📝 Liquid Text - Somewhat like Desklamp
 - 🔍 Everything
 - 📥 Free Download Manager
@@ -27,6 +28,7 @@ These are some of the apps that I consider downloading on a **New Machine** in c
 - ✏️ Openboard - To annotate over any window or any screen
 - 📄 PDFgear
 - 🛠️ PowerToys
+- 🖌️ PureRef
 - 🌧️ Rainmeter
 - 🖥️ Spacedesk - To use mobile phone as a dual screen
 - 🖱️ Smooth Scrolling
@@ -42,6 +44,7 @@ These are some of the apps that I consider downloading on a **New Machine** in c
 - 🖋️ Concepts
 - 💬 Telegram Desktop
 - 💬 WhatsApp
+- 🕸️ Web Catalog
 - 🔧 WinToys
 - 🦅 Windhawk
 - 🟦 Glassbrick
