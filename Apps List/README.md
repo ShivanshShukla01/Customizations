@@ -49,6 +49,16 @@ These are some of the apps that I consider downloading on a **New Machine** in c
 - 🦅 Windhawk
 - 🟦 Glassbrick
 - 🛡️ DefenderUI
+- GAME DEV SPECIFIC
+    - Unity 🛠️🎮
+    - Godot 🟢🎮
+    - Blender 🎨🖥️
+    - Blockbench 📦🛠️
+    - Aseprite 🌈🎨
+    - Bfxr 🎶🔊
+    - DaVinci Resolve 🎬💻
+    - GameMaker 🕹️🛠️
+    - Visual Studio 💻🔧
 
 ### 🌐 Browser Extensions
 
