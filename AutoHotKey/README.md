@@ -51,69 +51,6 @@
 - This might works in Laptops Only
 
 ```autohotkey
-; hold Alt Key and either scroll Mouse Wheel or Use Numpad5 or Numpad2
-!Numpad2::
-  AdjustScreenBrightness(-10)
-  Return
-!Numpad5::
-  AdjustScreenBrightness(10)
-  Return
-!WheelDown::
-  AdjustScreenBrightness(-5)
-  Return
-!WheelUp::
-  AdjustScreenBrightness(5)
-  Return
-AdjustScreenBrightness(step) {
-    service := "winmgmts:{impersonationLevel=impersonate}!\\.\root\WMI"
-    monitors := ComObjGet(service).ExecQuery("SELECT * FROM WmiMonitorBrightness WHERE Active=TRUE")
-    monMethods := ComObjGet(service).ExecQuery("SELECT * FROM wmiMonitorBrightNessMethods WHERE Active=TRUE")
-    minBrightness := 5  ; level below this is identical to this
-    for i in monitors {
-        curt := i.CurrentBrightness
-        break
-    }
-    if (curt < minBrightness)  ; parenthesis is necessary here
-        curt := minBrightness
-    toSet := curt + step
-    if (toSet > 100)
-        return
-    if (toSet < minBrightness)
-        toSet := minBrightness
-    for i in monMethods {
-        i.WmiSetBrightness(1, toSet)
-        break
-    }
-}
-```
-
-### To Open Websites or Folders with Shortcuts
-
-**Syntax:**
-
-```
-<Key-combinations>::
-    Run, "Path to the App with which you want to open" "Link to the file or website you want to open"
-return
-```
-
-###### For Example
-
-```autohotkey
-;on clickng Ctrl + Shift + Alt + O -> This will open the autohotkey script in which you are going to save all this in VS code directly from anywhere to add or remove something
-^+!o::
-    Run,"C:\Users\<YourUserName>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk" "C:\Users\shiva\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Custom Shortcuts.ahk"
-return
-
-;to reload this autohotey script after making changes without need of going to the folder and run in from there
-^+!r::
-    Reload
-return
-```
-
-### This is the Current Script I Use
-
-```autohotkey
 ;to control the volume with wheel
 +WheelUp::Send {WheelLeft}
 +WheelDown::Send {WheelRight}
@@ -123,17 +60,28 @@ return
 #Numpad2::Volume_Down
 
 ;|------------------------------------------------------------------------------------------|
-
+;WINDOW + Y 
 #y::
-    Run, "C:\Users\shiva\OneDrive\Documents\Apps\Brave Profiles\Radha Krishn - Brave.lnk" "https://www.youtube.com/"
+    Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Radha Krishn - Brave.lnk" "https://www.youtube.com/"
 return
 
+;WINDOW + SHIFT + y
 #+y::
-    Run, "C:\Users\shiva\OneDrive\Documents\Apps\Brave Profiles\Learning - Brave.lnk" "https://www.youtube.com/"
+    Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Coding - Brave.lnk" "https://www.youtube.com/"
 return
+
+;WINDOW + CONTROL + y
+#^y:: 
+    Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Coding - Brave.lnk" --incognito https://www.youtube.com
+return
+
+;WINDOW + SHIFT + ALT + Y
+^!+y::
+    Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Youtube - Brave.lnk"
+return    
 
 ^+!o::
-    Run,"C:\Users\shiva\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk" "C:\Users\shiva\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Custom Shortcuts.ahk"
+    Run,"C:\Users\shiva\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Code.lnk" "C:\Users\shiva\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Shortcuts.ahk"
 return
 
 ^+!r::
@@ -143,32 +91,27 @@ return
 ;to run Everything App which is fantastic for quick searching
 #s:: Run, "C:\Program Files\Everything\Everything.exe"
 
-;|-----------------------------------------------------------------------------------------|
+; |------------------------------------------------------------------------------------------|
+;OPENING SOME WEBSITES USING Shortcuts
 
-;to open several websites and Folders
-#^y::
-    ; Run Brave browser in private mode and open www.youtube.com
-    Run, "C:\Users\shiva\OneDrive\Documents\Apps\Brave Profiles\Learning - Brave.lnk" --incognito "https://www.youtube.com"
-
+;CHATGPT
+^!g::
+    Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Coding - Brave.lnk" "https://chatgpt.com/"
 return
 
-^+1::Run, "C:\Users\shiva\OneDrive\Desktop\Notes"
+;META AI 
+^!m::
+    Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Coding - Brave.lnk" "https://www.meta.ai/"
+return
 
-^+2::Run, "C:\Users\shiva\OneDrive\Desktop\Classes\G1 Classes\ACC"
-
-^+4::Run, "C:\Users\shiva\OneDrive\Desktop\Classes\G1 Classes\LAW"
-
-^+3::Run, "C:\Users\shiva\OneDrive\Desktop\Classes\G1 Classes\TAX"
-
-^+5::Run, "C:\Users\shiva\OneDrive\Desktop\Classes\G1 Classes\TAX (GST)"
-
-^+6:: Run, "C:\Users\shiva\OneDrive\Documents\Apps\Brave Profiles\Learning - Brave.lnk" "https://drive.google.com/drive/folders/1_0V2eF9Cyz3Ep3xVFIgtpECX1xxkSLQU"
-
-^+7:: Run "C:\Users\shiva\OneDrive\Desktop\Sections.drawio"
-
-^+8:: Run, "C:\Users\shiva\OneDrive\Documents\Apps\Brave Profiles\Learning - Brave.lnk" "https://chatgpt.com/"
+;BLACKBOX AI
+^!b::
+    Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Coding - Brave.lnk" "https://www.blackbox.ai/"
+return
 
 ; |------------------------------------------------------------------------------------------|
+
+
 
 ;to adjust brightness
 !Numpad2::
