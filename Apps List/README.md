@@ -43,6 +43,7 @@ These are some of the apps that I consider downloading on a **New Machine** in c
 - 🔊 EarTrumpet
 - 🖋️ Concepts
 - 💬 Telegram Desktop
+- 🪟 WinLaunch
 - 💬 WhatsApp
 - 🕸️ Web Catalog
 - 🔧 WinToys
