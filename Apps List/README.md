@@ -22,6 +22,7 @@ These are some of the apps that I consider downloading on a **New Machine** in c
 - 🖥️ VS Code
 - 🎬 MPV - Better than VLC for me
 - 🗂️ Notion
+- 📝 Notepad++
 - 📹 OBS Studio
 - 🗒️ Obsidian
 - 📝 OnlyOffice - Free alternative to MS Office with similar UI
@@ -60,6 +61,7 @@ These are some of the apps that I consider downloading on a **New Machine** in c
     - DaVinci Resolve 🎬💻
     - GameMaker 🕹️🛠️
     - Visual Studio 💻🔧
+	- ComfyUI 🖼️
 
 ### 🌐 Browser Extensions
 
