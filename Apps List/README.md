@@ -11,6 +11,7 @@ These are some of the apps that I consider downloading on a **New Machine** in c
 - 🦁 Brave
 - 💡 Desklamp
 - 📱 Discord
+- 📸 Droid Cam - Use phone as a webcam
 - 📝 Liquid Text - Somewhat like Desklamp
 - 🔍 Everything
 - 📥 Free Download Manager
