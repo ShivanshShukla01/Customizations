@@ -2,7 +2,7 @@
 
 These are some of the apps that I consider downloading on a **New Machine** in case of a change in current machinery.
 
-### 🖥️ Windows Appsssssssssss
+### 🖥️ Windows Apps
 
 - ✏️ Affine
 - 🖌️ Photoshop
