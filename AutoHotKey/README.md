@@ -45,6 +45,38 @@
 +WheelUp::Send {WheelLeft} ;hold shift key and scroll
 +WheelDown::Send {WheelRight}
 ```
+### To toogle the taskbar automatic hide
+>[!info] Make a separate `.ahk` file for this and put the file in `Win + R >>> Shell:Startup`
+```autohotkey
+; Hotkey to trigger the script (Ctrl + Alt + T)
+Pause::
+{
+    ; Simulate right-click on the taskbar
+    CoordMode, Mouse, Screen
+    ;the coordinates are calculated with the help of screen ruler in powertoys
+    MouseMove, 1520, 1060  ; Move near the taskbar area
+    Sleep, 100
+    Click, Right
+    Sleep, 100
+    
+    ; Simulate left-click on the taskbar settings
+    CoordMode, Mouse, Screen
+    ;the coordinates are calculated with the help of screen ruler in powertoys
+    MouseMove, 1560, 1000 ; Move near the taskbar area
+    Sleep, 100
+    Click, Left
+    Sleep, 1200
+
+    ; ; Navigate to Taskbar behaviors
+    Send, {Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Space} ; Tab through options to reach "Taskbar behaviors"
+    Sleep, 100
+
+    ; ; Toggle the "Automatically hide the taskbar" checkbox
+    Send, {Tab}{Tab}{Space} ; Tab to the toggle and press Space to toggle
+
+}
+Return
+```
 
 ### To adjust the Brightness from Mouse Wheel or Keyboard
 
