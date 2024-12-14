@@ -46,7 +46,7 @@
 +WheelDown::Send {WheelRight}
 ```
 ### To toogle the taskbar automatic hide
-==Make a separate `.ahk` file for this and put the file in `Win + R >>> Shell:Startup`==
+- Make a separate `taskbarmacro.ahk` file for this and put the file in `Win + R >>> Shell:Startup`
 ```autohotkey
 ; Hotkey to trigger the script (Ctrl + Alt + T)
 Pause::
