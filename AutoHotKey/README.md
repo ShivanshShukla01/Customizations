@@ -47,6 +47,9 @@
 ```
 ### To toogle the taskbar automatic hide
 - Make a separate `taskbarmacro.ahk` file for this and put the file in `Win + R >>> Shell:Startup`
+- When the taskbar is hidden, move mouse pointer to the bottom to bring it up.
+	- This macro only works if the taskbar is visible 
+	- Calculate and Change the Coordinates as per your own display using screen ruler in powertoys.
 ```autohotkey
 ; Hotkey to trigger the script (Ctrl + Alt + T)
 Pause::
