@@ -46,7 +46,6 @@
 +WheelDown::Send {WheelRight}
 ```
 ### To toogle the taskbar automatic hide
-- Make a separate `taskbarmacro.ahk` file for this and put the file in `Win + R >>> Shell:Startup`
 - When the taskbar is hidden, move mouse pointer to the bottom to bring it up.
 	- This macro only works if the taskbar is visible and settings window is closed.
 	- Calculate and Change the Coordinates as per your own display using screen ruler in powertoys.
@@ -71,7 +70,7 @@ Pause::
     Sleep, 1200
 
     ; ; Navigate to Taskbar behaviors
-    Send, {Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}{Space} ; Tab through options to reach "Taskbar behaviors"
+    Send, {Tab 12}{Space} ; Tab through options to reach "Taskbar behaviors"
     Sleep, 100
 
     ; ; Toggle the "Automatically hide the taskbar" checkbox
@@ -148,10 +147,15 @@ return
     Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Coding - Brave.lnk" --incognito https://www.youtube.com
 return
 
-;WINDOW + SHIFT + ALT + Y
+;CONTROL + SHIFT + ALT + Y
 ^!+y::
     Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Youtube - Brave.lnk"
 return    
+
+;winodw + alt + T
+#!t::
+    Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Coding - Brave.lnk" "C:\Program Files\Unity\Hub\Editor\6000.0.31f1\Editor\Data\Documentation\Unity Docs\Manual\UnityManual.html"
+return
 
 ^+!o::
     Run,"C:\Users\shiva\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Code.lnk" "C:\Users\shiva\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Shortcuts.ahk"
@@ -185,6 +189,34 @@ return
 ; |------------------------------------------------------------------------------------------|
 
 
+; Hotkey to trigger the script (Ctrl + Alt + T)
+Pause::
+{
+    ; Simulate right-click on the taskbar
+    CoordMode, Mouse, Screen
+    ;the coordinates are calculated with the help of screen ruler in powertoys
+    MouseMove, 1500, 1060  ; Move near the taskbar area
+    Sleep, 100
+    Click, Right
+    Sleep, 100
+    
+    ; Simulate left-click on the taskbar settings
+    CoordMode, Mouse, Screen
+    ;the coordinates are calculated with the help of screen ruler in powertoys
+    MouseMove, 1560, 1000 ; Move near the taskbar area
+    Sleep, 100
+    Click, Left
+    Sleep, 1500
+
+    ; ; Navigate to Taskbar behaviors
+    Send, {Tab 12}{Space} ; Tab through options to reach "Taskbar behaviors"
+    Sleep, 100
+
+    ; ; Toggle the "Automatically hide the taskbar" checkbox
+    Send, {Tab}{Tab}{Space} ; Tab to the toggle and press Space to toggle
+
+}
+Return
 
 ;to adjust brightness
 !Numpad2::
@@ -221,5 +253,6 @@ AdjustScreenBrightness(step) {
     }
 }
 ;|------------------------------------------------------------------------------------------|
+
 
 ```
