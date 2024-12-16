@@ -27,7 +27,7 @@ Contains configuration files for MPV media player 🎶.
 
 Includes settings and extensions for Obsidian, as well as a guide on how to copy the `.obsidian` folder to a new machine 📤.
 
-### 🎨 [Visual Studio](https://github.com/ShivanshShukla01/Customizations/tree/main/Visual%20Studio) 🎉
+### 👩‍💻[Visual Studio](https://github.com/ShivanshShukla01/Customizations/tree/main/Visual%20Studio) 🦾
 
 Includes settings and might be something more for Visual Studio.
 
