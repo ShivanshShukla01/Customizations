@@ -45,6 +45,7 @@
 +WheelUp::Send {WheelLeft} ;hold shift key and scroll
 +WheelDown::Send {WheelRight}
 ```
+
 ### To toogle the taskbar automatic hide
 - When the taskbar is hidden, move mouse pointer to the bottom to bring it up.
 	- This macro only works if the taskbar is visible and settings window is closed.
@@ -78,6 +79,19 @@ Pause::
 
 }
 Return
+```
+
+### Macro to toggle kanban mode and markdown mode in OBSIDIAN
+
+```autohotkey
+ScrollLock::
+    Send ^p              
+    Sleep 100            
+    Send kanban mode     
+    Sleep 100            
+    Send {Enter}         
+return
+
 ```
 
 ### To adjust the Brightness from Mouse Wheel or Keyboard
@@ -217,6 +231,16 @@ Pause::
 
 }
 Return
+
+;MACRO TO TOGGLE MARKDOWN AND KANBAN MODE IN OBSIDIAN
+ScrollLock::
+    Send ^p               
+    Sleep 100             
+    Send kanban mode      
+    Sleep 100             
+    Send {Enter}          
+return
+
 
 ;to adjust brightness
 !Numpad2::
