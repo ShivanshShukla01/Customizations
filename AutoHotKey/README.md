@@ -94,6 +94,22 @@ return
 
 ```
 
+### Scroll up and down using Alt Gr + Arrow Keys
+
+```autohotkey
+; Scroll up using AltGr + Arrow Up
+<^>!Up:: ; AltGr + Arrow Up
+    Send, {WheelUp 1} ; Scrolls up
+    return
+
+; Scroll down using AltGr + Arrow Down
+<^>!Down:: ; AltGr + Arrow Down
+    Send, {WheelDown 1} ; Scrolls down
+    return
+
+```
+
+
 ### To adjust the Brightness from Mouse Wheel or Keyboard
 
 - This might works in Laptops Only
@@ -240,6 +256,16 @@ ScrollLock::
     Sleep 100             
     Send {Enter}          
 return
+
+; Scroll up using AltGr + Arrow Up
+<^>!Up:: ; AltGr + Arrow Up
+    Send, {WheelUp 1} ; Scrolls up
+    return
+
+; Scroll down using AltGr + Arrow Down
+<^>!Down:: ; AltGr + Arrow Down
+    Send, {WheelDown 1} ; Scrolls down
+    return
 
 
 ;to adjust brightness
