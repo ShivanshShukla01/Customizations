@@ -94,21 +94,34 @@ return
 
 ```
 
-### Scroll up and down using Alt Gr + Arrow Keys
+### Scroll up and down using F2 + Arrow Keys
 
 ```autohotkey
 ; Scroll up using AltGr + Arrow Up
-<^>!Up:: ; AltGr + Arrow Up
+F2 & Up:: ; F2 + Arrow Up
     Send, {WheelUp 1} ; Scrolls up
     return
 
 ; Scroll down using AltGr + Arrow Down
-<^>!Down:: ; AltGr + Arrow Down
+F2 & Down:: ; F2+ Arrow Down
     Send, {WheelDown 1} ; Scrolls down
     return
 
 ```
 
+### To Move Up and Down by 5 lines in any Document 
+
+```AutoHotKey
+; Jump up 5 lines with F1 + Arrow Up
+F1 & Up:: ; F1 + Arrow Up
+    SendInput, {Up 5} ; Moves up 5 lines in one action
+    return
+
+; Jump down 5 lines with F1 + Arrow Down
+F1 & Down:: ; F1 + Arrow Down
+    SendInput, {Down 5} ; Moves down 5 lines in one action
+    return
+```
 
 ### To adjust the Brightness from Mouse Wheel or Keyboard
 
@@ -248,25 +261,42 @@ Pause::
 }
 Return
 
+; |------------------------------------------------------------------------------------------|
+
 ;MACRO TO TOGGLE MARKDOWN AND KANBAN MODE IN OBSIDIAN
 ScrollLock::
-    Send ^p               
-    Sleep 100             
-    Send kanban mode      
-    Sleep 100             
-    Send {Enter}          
+    Send ^p                  ; Simulate Ctrl+P
+    Sleep 100               ; Wait for 100 milliseconds
+    Send kanban mode       ; Type 
+    Sleep 100             ; Wait for 100 milliseconds
+    Send {Enter}            ; Press Enter
 return
 
+; |------------------------------------------------------------------------------------------|
+
 ; Scroll up using AltGr + Arrow Up
-<^>!Up:: ; AltGr + Arrow Up
+F2 & Up:: ; F2 + Arrow Up
     Send, {WheelUp 1} ; Scrolls up
     return
 
 ; Scroll down using AltGr + Arrow Down
-<^>!Down:: ; AltGr + Arrow Down
+F2 & Down:: ; F2 + Arrow Down
     Send, {WheelDown 1} ; Scrolls down
     return
 
+; |------------------------------------------------------------------------------------------|
+
+; Jump up 5 lines with F1 + Arrow Up
+F1 & Up:: ; F1 + Arrow Up
+    SendInput, {Up 5} ; Moves up 5 lines in one action
+    return
+
+; Jump down 5 lines with F1 + Arrow Down
+F1 & Down:: ; F1 + Arrow Down
+    SendInput, {Down 5} ; Moves down 5 lines in one action
+    return
+
+; |------------------------------------------------------------------------------------------|
 
 ;to adjust brightness
 !Numpad2::
@@ -303,6 +333,5 @@ AdjustScreenBrightness(step) {
     }
 }
 ;|------------------------------------------------------------------------------------------|
-
 
 ```
