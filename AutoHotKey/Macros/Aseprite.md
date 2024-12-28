@@ -1,4 +1,4 @@
-### To create a seamless transition #seamlesstransition
+### To create a Seamless Transition
 
 ```autohotkey
 F10::
