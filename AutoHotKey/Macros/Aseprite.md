@@ -1,7 +1,9 @@
 ### To create a Seamless Transition
+- Just copy the code below into any `.ahk` file, and run it 
+- Then, when on aseprite, after making the sprite, engage the hotkey.
 
 ```autohotkey
-F10::
+F10:: ;change the hotkey here
 
 ;enter width for left or right animation
 ;enter height for up or down animation
