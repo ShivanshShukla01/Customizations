@@ -2,6 +2,7 @@
 - Just copy the code below into any `.ahk` file, and run it 
 - Then, when on aseprite, after making the sprite, engage the hotkey.
 
+Change the `sizeOfCanvas`, `numberOfPixelShift` and `directionOfPixelShift` as per the Canvas Size 
 ```autohotkey
 F10:: ;change the hotkey here
 
