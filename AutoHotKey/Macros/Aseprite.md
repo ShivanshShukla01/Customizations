@@ -3,7 +3,7 @@
 - Make the pattern
 - Double Click the `.ahk` file to open the GUI App
 - Enter the Parameters
-- Click on Submit and OK
+- Click on Submit
 
 ```autohotkey
 Gui, Font, s10, Bahnschrift ; Set a custom font size and type
