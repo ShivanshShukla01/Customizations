@@ -1,6 +1,10 @@
 ### To create a Seamless Transition
+
+- Download the `Seamless Transition.exe` from 👉 [Here](https://github.com/ShivanshShukla01/Customizations/raw/main/AutoHotKey/Macros/Seamless Transition.exe) 👈
+
+##### Source Code
 - Just copy the code below into any `.ahk` file, and run it .
-- Make the pattern.
+- Make the pattern in Aseprite.
 - Double Click the `.ahk` file to open the GUI App.
 - Enter the Parameters.
 - Click on Submit.
