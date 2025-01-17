@@ -235,28 +235,8 @@ return
 ; Hotkey to trigger the script (Ctrl + Alt + T)
 Pause::
 {
-    ; Simulate right-click on the taskbar
-    CoordMode, Mouse, Screen
-    ;the coordinates are calculated with the help of screen ruler in powertoys
-    MouseMove, 1500, 1060  ; Move near the taskbar area
-    Sleep, 100
-    Click, Right
-    Sleep, 100
-    
-    ; Simulate left-click on the taskbar settings
-    CoordMode, Mouse, Screen
-    ;the coordinates are calculated with the help of screen ruler in powertoys
-    MouseMove, 1560, 1000 ; Move near the taskbar area
-    Sleep, 100
-    Click, Left
-    Sleep, 1500
-
-    ; ; Navigate to Taskbar behaviors
-    Send, {Tab 12}{Space} ; Tab through options to reach "Taskbar behaviors"
-    Sleep, 100
-
-    ; ; Toggle the "Automatically hide the taskbar" checkbox
-    Send, {Tab}{Tab}{Space} ; Tab to the toggle and press Space to toggle
+    Send {End}
+    Send {;}
 
 }
 Return
@@ -274,14 +254,22 @@ return
 
 ; |------------------------------------------------------------------------------------------|
 
-; Scroll up using AltGr + Arrow Up
+; Scroll up using F2 + Arrow 
 F2 & Up:: ; F2 + Arrow Up
     Send, {WheelUp 1} ; Scrolls up
     return
 
-; Scroll down using AltGr + Arrow Down
+; Scroll down using F2 + Arrow
 F2 & Down:: ; F2 + Arrow Down
     Send, {WheelDown 1} ; Scrolls down
+    return
+
+F2 & Left:: ; F2 + Arrow Down
+    Send, {WheelLeft 1} ; Scrolls down
+    return
+
+F2 & Right:: ; F2 + Arrow Down
+    Send, {WheelRight 1} ; Scrolls down
     return
 
 ; |------------------------------------------------------------------------------------------|
@@ -299,16 +287,16 @@ F1 & Down:: ; F1 + Arrow Down
 ; |------------------------------------------------------------------------------------------|
 
 ;to adjust brightness
-!Numpad2::
+ RAlt & Numpad2::
   AdjustScreenBrightness(-10)
   Return
-!Numpad5::
+RAlt & Numpad5::
   AdjustScreenBrightness(10)
   Return
-!WheelDown::
+RAlt & WheelDown::
   AdjustScreenBrightness(-5)
   Return
-!WheelUp::
+RAlt & WheelUp::
   AdjustScreenBrightness(5)
   Return
 AdjustScreenBrightness(step) {
