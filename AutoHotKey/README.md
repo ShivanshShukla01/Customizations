@@ -257,7 +257,7 @@ Shift & Pause::
 
     Send ^h                 ; ctrl + h
     Sleep 100               
-    SendRaw ^(\r?\n){1,}    ;send the regex to find empty lines
+    SendRaw ^\s*$\n         ;send the regex to find empty lines
     Sleep 100
     Send !a                 ;alt + a 
     Sleep 100
