@@ -252,6 +252,18 @@ ScrollLock::
     Send {Enter}            ; Press Enter
 return
 
+;Script to Remove all the empty lines in Visual Studio
+Shift & Pause::
+
+    Send ^h                 ; ctrl + h
+    Sleep 100               
+    SendRaw ^(\r?\n){1,}    ;send the regex to find empty lines
+    Sleep 100
+    Send !a                 ;alt + a 
+    Sleep 100
+    Send {Esc}              ;remove the find and replace dialogue box
+return
+
 ; |------------------------------------------------------------------------------------------|
 
 ; Scroll up using F2 + Arrow 
