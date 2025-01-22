@@ -166,7 +166,7 @@ AdjustScreenBrightness(step) {
 ### This is the current script i am using
 
 ```autohotkey
-;to control the volume with wheel
+;TO CONTROL VOLUME WITH SCROLL WHEEL
 +WheelUp::Send {WheelLeft}
 +WheelDown::Send {WheelRight}
 #WheelUp::Volume_Up
@@ -174,7 +174,7 @@ AdjustScreenBrightness(step) {
 #Numpad5::Volume_Up
 #Numpad2::Volume_Down
 
-;|------------------------------------------------------------------------------------------|
+;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ;WINDOW + Y 
 #y::
     Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Radha Krishn - Brave.lnk" "https://www.youtube.com/"
@@ -195,44 +195,40 @@ return
     Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Youtube - Brave.lnk"
 return    
 
-;winodw + alt + T
+;Window + Alt + T
 #!t::
     Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Coding - Brave.lnk" "C:\Program Files\Unity\Hub\Editor\6000.0.31f1\Editor\Data\Documentation\Unity Docs\Manual\UnityManual.html"
 return
 
+;Window + Alt + Ctrl + O
 ^+!o::
     Run,"C:\Users\shiva\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Code.lnk" "C:\Users\shiva\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Shortcuts.ahk"
 return
 
+;Window + Alt + Ctrl + R
 ^+!r::
     Reload
 return
 
-;to run Everything App which is fantastic for quick searching
 #s:: Run, "C:\Program Files\Everything\Everything.exe"
 
-; |------------------------------------------------------------------------------------------|
-;OPENING SOME WEBSITES USING Shortcuts
+; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+;OPENING SOME WEBSITES in SOME profiles USING Shortcuts
 
-;CHATGPT
 ^!g::
     Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Coding - Brave.lnk" "https://chatgpt.com/"
 return
 
-;META AI 
 ^!m::
     Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Coding - Brave.lnk" "https://www.meta.ai/"
 return
 
-;BLACKBOX AI
 ^!b::
     Run, "C:\Users\shiva\OneDrive\Pictures\Apps\Brave Profiles\Coding - Brave.lnk" "https://www.blackbox.ai/"
 return
 
-; |------------------------------------------------------------------------------------------|
+; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-
-; Hotkey to trigger the script (Ctrl + Alt + T)
 Pause::
 {
     Send {End}
@@ -241,32 +237,39 @@ Pause::
 }
 Return
 
-; |------------------------------------------------------------------------------------------|
-
-;MACRO TO TOGGLE MARKDOWN AND KANBAN MODE IN OBSIDIAN
-ScrollLock::
-    Send ^p                  ; Simulate Ctrl+P
-    Sleep 100               ; Wait for 100 milliseconds
-    Send kanban mode       ; Type 
-    Sleep 100             ; Wait for 100 milliseconds
-    Send {Enter}            ; Press Enter
-return
-
-;Script to Remove all the empty lines in Visual Studio
+;FOR VISUAL STUDIO
 Shift & Pause::
 
     Send ^h                 ; ctrl + h
     Sleep 100               
-    SendRaw ^\s*$\n         ;send the regex to find empty lines
+    SendRaw ^\s*$\n    ;send the regex to find empty lines
     Sleep 100
     Send !a                 ;alt + a 
     Sleep 100
     Send {Esc}              ;remove the find and replace dialogue box
 return
 
-; |------------------------------------------------------------------------------------------|
+; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-; Scroll up using F2 + Arrow 
+;FOR OBSIDIAN
+ScrollLock::
+    Send ^p                     ; Simulate Ctrl+P
+    Sleep 100                   ; Wait for 100 milliseconds
+    SendInput kanban mode       ; Type 
+    Sleep 100                   ; Wait for 100 milliseconds
+    Send {Enter}                ; Press Enter
+return
+
+; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+;SO THAT F2 DO NOT LOSE ITS OWN FUNCTIONALITY
+F2::
+    KeyWait, F2
+    if (A_PriorKey = "F2") {
+        Send {F2}R̥
+    }
+    return
+
 F2 & Up:: ; F2 + Arrow Up
     Send, {WheelUp 1} ; Scrolls up
     return
@@ -284,21 +287,20 @@ F2 & Right:: ; F2 + Arrow Down
     Send, {WheelRight 1} ; Scrolls down
     return
 
-; |------------------------------------------------------------------------------------------|
+; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-; Jump up 5 lines with F1 + Arrow Up
+; Jump up 5 lines 
 F1 & Up:: ; F1 + Arrow Up
     SendInput, {Up 5} ; Moves up 5 lines in one action
     return
 
-; Jump down 5 lines with F1 + Arrow Down
+; Jump down 5 lines 
 F1 & Down:: ; F1 + Arrow Down
     SendInput, {Down 5} ; Moves down 5 lines in one action
     return
 
-; |------------------------------------------------------------------------------------------|
+; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-;to adjust brightness
  RAlt & Numpad2::
   AdjustScreenBrightness(-10)
   Return
@@ -332,6 +334,6 @@ AdjustScreenBrightness(step) {
         break
     }
 }
-;|------------------------------------------------------------------------------------------|
+;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 ```
