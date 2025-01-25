@@ -38,6 +38,7 @@ These are some of the apps that I consider downloading on a **New Machine** in c
 - 📑 SumatraPDF
 - 🌳 Treesize
 - 💻 VMware Workstation
+- 🖥️ VS Code
 - 📦 Winrar
 - 🧹 Wise Program Uninstaller
 - 🧼 Revo Uninstaller 
@@ -53,16 +54,21 @@ These are some of the apps that I consider downloading on a **New Machine** in c
 - 🟦 Glassbrick
 - 🛡️ DefenderUI
 - GAME DEV SPECIFIC
-    - Unity 🛠️🎮
-    - Godot 🟢🎮
-    - Blender 🎨🖥️
-    - Blockbench 📦🛠️
-    - Aseprite 🌈🎨
-    - Bfxr 🎶🔊
-    - DaVinci Resolve 🎬💻
-    - GameMaker 🕹️🛠️
-    - Visual Studio 💻🔧
-	- ComfyUI 🖼️
+    - Godot 
+    - Aseprite 
+	- Krita
+	- Inkscape
+    - Bfxr 
+	- Fami Studio
+	- Anvil Studio
+	- FL Studio
+    - DaVinci Resolve 
+	- Miro
+	- Figma
+	- Steam
+	- Blockbench
+    - Visual Studio 
+	- ComfyUI 
 
 ### 🌐 Browser Extensions
 
