@@ -1,74 +1,76 @@
 # 📱 Apps and Extensions
 
-These are some of the apps that I consider downloading on a **New Machine** in case of a change in current machinery.
+These are some of the apps that I consider downloading on a **New Machine** in case of a changing the current machinery.
 
 ### 🖥️ Windows Apps
 
-- ✏️ Affine
-- 🖌️ Photoshop
-- 🔄 Autohotkey
-- 📱 Bluestacks
-- 🦁 Brave
-- 💡 Desklamp
-- 📱 Discord
-- 📸 Droid Cam - Use phone as a webcam
-- 📝 Liquid Text - Somewhat like Desklamp
-- 🔍 Everything
-- 📥 Free Download Manager
-- 🎧 FxSound
-- 🗂️ Git
-- 🖥️ Github Desktop
-- ☁️ Google Drive
-- 🔒 Lock Hunter
-- 🖥️ VS Code
-- 🎬 MPV - Better than VLC for me
-- 🗂️ Notion
-- 📝 Notepad++
-- 📹 OBS Studio
-- 🗒️ Obsidian
-- 📝 OnlyOffice - Free alternative to MS Office with similar UI
-- ✏️ Openboard - To annotate over any window or any screen
-- 📄 PDFgear
-- 🛠️ PowerToys
-- 🖌️ PureRef
-- 🌧️ Rainmeter
-- 🖥️ Spacedesk - To use mobile phone as a dual screen
-- 🖱️ Smooth Scrolling
-- 😊 Stretchly
-- 📑 SumatraPDF
-- 🌳 Treesize
-- 💻 VMware Workstation
-- 🖥️ VS Code
-- 📦 Winrar
-- 🧹 Wise Program Uninstaller
-- 🧼 Revo Uninstaller 
-- 🖥️ Alacritty - If you do not want to use the native terminal
-- 🔊 EarTrumpet
-- 🖋️ Concepts
-- 💬 Telegram Desktop
-- 🪟 WinLaunch
-- 💬 WhatsApp
-- 🕸️ Web Catalog
-- 🔧 WinToys
-- 🦅 Windhawk
-- 🟦 Glassbrick
-- 🛡️ DefenderUI
-- GAME DEV SPECIFIC
-    - Godot 
-    - Aseprite 
+- Game Engine🕹️🎮
+	- Godot
+- Painting/Coloring/Drawing/Brainstorm/Whiteboard🎨🖼️🧠
+	- Aseprite
 	- Krita
 	- Inkscape
-    - Bfxr 
+	- Photoshop
+	- Affine
+	- Openboard
+- Sound/Music🎹🎙️🎧
+	- Bfxr
 	- Fami Studio
 	- Anvil Studio
 	- FL Studio
-    - DaVinci Resolve 
+- Video Editors and Players🎬✂️🎥
+	- DaVinci Resolve
+	- MPV
+- Management📅📋📊
+	- Obsidian
+	- Notion
 	- Miro
 	- Figma
-	- Steam
+- 3D Designing🧱🔮🧑‍💻
+	- Blender
 	- Blockbench
-    - Visual Studio 
-	- ComfyUI 
+- Coding Editors👩‍💻🔧📝
+	- Visual Studio 
+	- VS Code
+	- Notepad++
+- Other Game Dev Related⚔️🧩🎯
+	- OBS Studio
+	- Steam
+	- ComfyUI
+- Social Media📱💬🌐
+	- Discord
+	- Telegram Desktop
+	- Whatsapp
+- Other Must Downloads📐📏🗿
+	- Autohotkey
+	- Brave
+	- Everything
+	- FxSound
+	- Git
+	- Rainmeter
+	- Sumatra PDF
+	- Treesize
+	- Winrar & 7zip
+	- Stretchly
+	- Revo Uninstaller
+	- Powertoys
+	- PDFgear
+	- Lock Hunter
+	- [Pen Tablet Driver](https://www.xp-pen.com/download/deco-mini7.html)
+- Others Optional❓🧩🎲
+	- Bluestacks
+	- Desklamp
+	- Droid Cam
+	- Liquid Text
+	- FDM
+	- Github Desktop
+	- PureRef
+	- Spaceedesk
+	- VMware Workstation
+	- Web Catalog
+	- WinToys
+	- Winhawk
+	- DefenderUI
 
 ### 🌐 Browser Extensions
 
