@@ -45,6 +45,7 @@ These are some of the apps that I consider downloading on a **New Machine** in c
 	- Autohotkey
 	- Brave
 	- Everything
+	- Bitwarden
 	- FxSound
 	- Git
 	- Rainmeter
